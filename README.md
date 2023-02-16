@@ -115,6 +115,5 @@ width: 100%;
 <div class="footer">
 <h2>اینجا محل تبلیغ شماست</h2>
 </div>
-
 </body>
 </html>
