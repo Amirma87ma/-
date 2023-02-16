@@ -86,7 +86,12 @@ float: none;
 width: 100%;
 }
 }
-</style>
+
+   
+      body {
+         color: white;
+      }
+   </style>
 </head>
 <body>
 
@@ -110,8 +115,19 @@ width: 100%;
 <a href="https://discord.gg/3XAvay8sMW" class="active">GB</a>
 
 <div class="footer">
-<h2>اینجا محل تبلیغ شماست</h2>
-</div>
+
+
+   <h2>Using the <i>setInterval()</i> function to change a background color via color picker.</h2>
+   <input id = "color" type = "color" value = "fff">
+   <script>
+      // Change color after every 100 seconds
+      setInterval(() => {
+         let color = document.getElementById('color');
+         let colorValue = color.value;
+         document.body.style.backgroundColor = colorValue;
+      }, 100);
+   </script>
+
 
 </body>
 </html>
