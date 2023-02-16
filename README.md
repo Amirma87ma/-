@@ -93,7 +93,7 @@ width: 100%;
 <div class="header">
 <h1>سایت بتمن در واقعیت </h1>
 <p style="font-weight: bold">آموزش بتمن شدن واقعی!</p>
-<img src="content://media/external/downloads/51548" ... attributes-list/>
+
 </div>
 
 <div class="navbar">
