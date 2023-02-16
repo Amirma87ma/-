@@ -93,7 +93,7 @@ width: 100%;
 <div class="header">
 <h1>سایت بتمن در واقعیت </h1>
 <p style="font-weight: bold">آموزش بتمن شدن واقعی!</p>
-https://media.discordapp.net/attachments/819298405532696616/1075748387716071514/v.dodo.v3ea30a.mp4
+<img src=" v.dodo.v3ea30a.mp4" alt="some_text" style="width:width;height:height;">
 </div>
 
 <div class="navbar">
