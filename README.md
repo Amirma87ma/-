@@ -112,5 +112,60 @@ width: 100%;
 <div class="footer">
 <h2>اینجا محل تبلیغ شماست</h2>
 </div>
+    <!--replywp.com comment code -->
+    <section class="main-comment-slider">
+        <div class="container">
+            <header class="slider-box-item-title">
+                <h2 class="d-inline">نظرات</h2>
+                <div class="border-des">
+                    <span> سلام</span>
+                </div>
+            </header>
+            <div class="row">
+                <?php   $replywp_comments = get_comments('status=approve&number=5'); ?>
+                <?php foreach ($replywp_comments as $replywp_comment) { ?>
+                    <div class="col-6">
+                        <div class="comment-slider-box">
+                            <div class="comment-slider-content">
+                                <p>
+                                    <?php echo wp_html_excerpt(  $replywp_comment->comment_content, 250 ); ?>
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="d-flex flex-row bd-highlight mb-3">
+                                        <div class="p-2 bd-highlight">
+                                            <div class="comment-slider-avatar">
+                                                <?php echo get_avatar( $replywp_comment, '90' ); ?>
+                                            </div>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <div class="comment-slider-author">
+                                                <div class="comment-author-main">
+                                                    <h5 class="testimonial-author-name">
+                                                        <?php echo strip_tags($replywp_comment->comment_author); ?>
+                                                    </h5>
+                                                    <span class="testimonial-author-role"><?php the_time('j F Y'); ?></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="click-author-video">
+                                        <a href="<?php echo get_permalink($replywp_comment->ID); ?>#comment-<?php echo $replywp_comment->comment_ID; ?>">
+                                            <i class="fa fa-play-circle"></i>
+                                            <p class="sdfds">مشاهده ویدئو</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php }  ?>
+            </div>
+        </div>
+    </section>
+    <!--replywp.com comment code -->
 </body>
 </html>
