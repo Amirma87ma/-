@@ -131,7 +131,7 @@ width: 100%;
 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 </div>
 </div>
-
+<a href="https://discord.gg/3XAvay8sMW" class="active">my server</a>
 <div class="footer">
 <h2>Footer</h2>
 </div>
