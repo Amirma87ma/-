@@ -94,7 +94,7 @@ width: 100%;
 <h1>سایت بتمن در واقعیت </h1>
 <p style="font-weight: bold">آموزش بتمن شدن واقعی!</p>
 <video>
-https://uupload.ir/view/v.dodo.v3ea30a_bygs.mp4/
+<source src="https://uupload.ir/view/v.dodo.v3ea30a_bygs.mp4/" type="video/mp4">
 </video>
 </div>
 
