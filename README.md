@@ -93,7 +93,9 @@ width: 100%;
 <div class="header">
 <h1>سایت بتمن در واقعیت </h1>
 <p style="font-weight: bold">آموزش بتمن شدن واقعی!</p>
-<img src=" v.dodo.v3ea30a.mp4" alt="some_text" style="width:width;height:height;">
+<video>
+https://uupload.ir/view/v.dodo.v3ea30a_bygs.mp4/
+</video>
 </div>
 
 <div class="navbar">
