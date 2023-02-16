@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="assets/styles/main.css">
 	
 </head>
-<body>
+<body style="background-color:red">
 <P>hello</P>
 	<script src="assets/scripts/main.js"></script>
 
