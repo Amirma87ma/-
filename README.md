@@ -113,10 +113,7 @@ width: 100%;
 <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
 <h3>More Text</h3>
 <p>Lorem ipsum dolor sit ame.</p>
-<div class="fakeimg" style="height:60px;">Image</div><br>
-<div class="fakeimg" style="height:60px;">Image</div><br>
-<div class="fakeimg" style="height:60px;">Image</div>
-</div>
+<a href="https://discord.gg/3XAvay8sMW" class="active">my server</a>
 <div class="main">
 <h2>TITLE HEADING</h2>
 <h5>Title description, Dec 7, 2017</h5>
@@ -131,7 +128,6 @@ width: 100%;
 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 </div>
 </div>
-<a href="https://discord.gg/3XAvay8sMW" class="active">my server</a>
 <div class="footer">
 <h2>Footer</h2>
 </div>
