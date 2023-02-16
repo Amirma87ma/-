@@ -110,14 +110,14 @@ width: 100%;
 <div class="row">
 <div class="side">
 <h2 style="font-family:arial; color:#000000;">About Me</h2>
-<Pstyle="font-family:arial; color:#000000;">i am batman </P>
+<P style="font-family:arial; color:#000000;">i am batman </P>
 <H2 style="font-family:arial; color:#000000;">servers</H2>
 <a href="https://discord.gg/3XAvay8sMW" class="active">GB</a>
 
 <div class="footer">
 
 
-   <h2style="font-family:arial; color:#000000;">Change the background color</h2>
+   <h2 style="font-family:arial; color:#000000;">Change the background color</h2>
    <input id = "color" type = "color" value = "fff">
    <script>
       // Change color after every 100 seconds
