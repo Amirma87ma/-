@@ -109,15 +109,15 @@ width: 100%;
 
 <div class="row">
 <div class="side">
-<h2>About Me</h2>
-<P> i am batman </P>
-<H2 style="font-family:arial; color:#FF0000;">servers</H2>
+<h2 style="font-family:arial; color:#FFF000;">About Me</h2>
+<Pstyle="font-family:arial; color:#FF0000;">i am batman </P>
+<H2 style="font-family:arial; color:#FF00F0;">servers</H2>
 <a href="https://discord.gg/3XAvay8sMW" class="active">GB</a>
 
 <div class="footer">
 
 
-   <h2>Using the <i>setInterval()</i> function to change a background color via color picker.</h2>
+   <h2style="font-family:arial; color:#FF0F00;">Change the background color</h2>
    <input id = "color" type = "color" value = "fff">
    <script>
       // Change color after every 100 seconds
