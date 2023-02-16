@@ -1,235 +1,137 @@
 
-<!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
-<meta charset="utf-8">
+<title>سایت بتمن واقعی</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title style="colour:red>این سایت متعلق به بتمن اصلی است </title>
-<!-- Webgoo.ir -->
 <style>
+* {
+box-sizing: border-box;
+}
 body {
-    font-family: Tahoma, Geneva, sans-serif;
-    text-align: justify;
-    font-size: 12px;
-    direction: rtl;
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
 }
-a, a:hover {
-	text-decoration: none;
+.header {
+padding: 80px;
+text-align: center;
+background: #1abc9c;
+color: white;
 }
-div {
-	border-radius: 8px;
+.header h1 {
+font-size: 40px;
 }
-#main-block {
-    width: 960px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-	padding: 8px;
-	background: #F0F0F0;
-	border: #CCC 1px solid;
-	text-align: center;
+.navbar {
+overflow: hidden;
+background-color: #333;
+position: sticky;
+position: -webkit-sticky;
+top: 0;
 }
-#header {
-	display: block;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	height: 150px;
-	background: #FFFFFF;
-	border: #CCC 1px solid;
-	text-align: center;
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
 }
-#top-menu {
-	display: block;
-	width: 100%;
-	height: 30px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 8px;
-	background: #FFFFFF;
-	border: #CCC 1px solid;
-	text-align: center;
+.navbar a.right {
+float: right;
 }
-#side-left, #side-right, #side-center {
-	display: inline-block;
-	width: 15%;
-	height: auto;
-	min-height: 150px;
-	margin: 8px auto auto 5px;
-	background: #FFFFFF;
-	border: #CCC 1px solid;
-	text-align: center;
-	vertical-align: top;
+.navbar a:hover {
+background-color: #ddd;
+color: black;
 }
-#side-left {
-	margin: 8px auto auto auto;
+.navbar a.active {
+background-color: #666;
+color: white;
 }
-#side-center {
-	width: 66%;
+.row {
+display: -ms-flexbox; /* IE10 */
+display: flex;
+-ms-flex-wrap: wrap; /* IE10 */
+flex-wrap: wrap;
 }
-#footer {
-	display: block;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	height: 100px;
-	background: #FFFFFF;
-	border: #CCC 1px solid;
-	text-align: center;
-	color: #999999;
+.side {
+-ms-flex: 30%; /* IE10 */
+flex: 30%;
+background-color: #f1f1f1;
+padding: 20px;
 }
-.clear {
-	height: 8px;
-	clear: both;
+.main {
+-ms-flex: 70%; /* IE10 */
+flex: 70%;
+background-color: white;
+padding: 20px;
 }
-.ltr {
-	direction: ltr;
+.fakeimg {
+background-color: #aaa;
+width: 100%;
+padding: 20px;
 }
-
-.header-logo {
-	display: inline-block;
-	position: relative;
-	width: 20%;
-	height: 86%;
-	border: 1px dashed #CCCCCC;
-	text-align: center;
-	vertical-align: top;
-	margin: 1%;
+.footer {
+padding: 20px;
+text-align: center;
+background: #ddd;
 }
-.header-ads {
-	display: inline-block;
-	position: relative;
-	width: 30%;
-	height: 86%;
-	border: 1px dashed #CCCCCC;
-	text-align: center;
-	vertical-align: top;
-	margin: 1%;
+@media screen and (max-width: 700px) {
+.row {
+flex-direction: column;
 }
-.header-search {
-	display: inline-block;
-	position: relative;
-	width: 30%;
-	height: 86%;
-	border: 1px dashed #CCCCCC;
-	text-align: center;
-	vertical-align: top;
-	margin: 1%;
 }
-.input-search {
-	width: 100%;
+@media screen and (max-width: 400px) {
+.navbar a {
+float: none;
+width: 100%;
 }
-.centered {
-	position: absolute;
-	width: 50%;
-	top: 40%;
-	left: 25%;
-	text-align: center;
-}
-
-.side-titr-wrapper {
-	position: relative;
-	height: 24px;
-	width: 100%;
-}
-.side-titr-left, .side-titr-right, .side-titr-center {
-	height: 24px;
-	background: #CCC;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-}
-.side-titr-left, .side-titr-right {
-	position: absolute;
-	width: 24px;
-	top: 0;
-}
-.side-titr-left {
-	left: 0;
-	background: url(side-titr-left.png) no-repeat;
-}
-.side-titr-right {
-	right: 0;
-	background: url(side-titr-right.png) no-repeat;
-}
-.side-titr-center {
-	width: 100%;
-	background: url(side-titr-center.png) repeat-x;
-}
-
-.side-content-justify {
-	text-align: justify;
-	padding: 4px;
-	line-height: 22px;
-	color: #333;
-}
-
-@media screen and (max-width: 1010px) {
-	#main-block {
-		width: 90%;
-	}
-	#side-center {
-		width: 60%;
-	}
 }
 </style>
 </head>
 <body>
-<div id="main-block">
-<div id="header">
-<div class="header-logo">
-<div class="centered">
-Logo
+
+<div class="header">
+<h1>تاپ سایت 98</h1>
+<p style="font-weight: bold">آموزش بتمن شدن واقعی!</p>
 </div>
+
+<div class="navbar">
+<a href="#" class="active">Home</a>
+<a href="#">Link</a>
+<a href="#">Link</a>
+<a href="#" class="right">Link</a>
 </div>
-<div class="header-ads">
-<div class="centered">
-Ads
+
+<div class="row">
+<div class="side">
+<h2>About Me</h2>
+<h5>Photo of me:</h5>
+<div class="fakeimg" style="height:200px;">Image</div>
+<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+<h3>More Text</h3>
+<p>Lorem ipsum dolor sit ame.</p>
+<div class="fakeimg" style="height:60px;">Image</div><br>
+<div class="fakeimg" style="height:60px;">Image</div><br>
+<div class="fakeimg" style="height:60px;">Image</div>
 </div>
-</div>
-<div class="header-search">
-<div class="centered">
-<label for="search">جستجو:</label>
-<input name="search" id="search" class="input-search" type="text" placeholder="جستجو...">
-</div>
-</div>
-</div>
-<div id="top-menu">
-<a href="#" title="Link 1">Link 1</a> | <a href="#" title="Link 2">Link 2</a> | <a href="#" title="Link 3">Link 3</a>
-</div>
-<div id="side-right">
-<div class="side-titr-wrapper">
-<div class="side-titr-right"></div><div class="side-titr-center">Title</div><div class="side-titr-left"></div>
-</div>
-</div>
-<div id="side-center">
-<div class="side-titr-wrapper">
-<div class="side-titr-right"></div><div class="side-titr-center">Title</div><div class="side-titr-left"></div>
-</div>
-<div class="side-content-justify">
-من بتمنم
-</div>
-</div>
-<div id="side-left">
-<div class="side-titr-wrapper">
-<div class="side-titr-right"></div><div class="side-titr-center">Title</div><div class="side-titr-left"></div>
-</div>
-</div>
-<div class="clear"></div>
-<div id="footer">
-<a href="#" title="Link 1">Link 1</a> | <a href="#" title="Link 2">Link 2</a> | <a href="#" title="Link 3">Link 3</a>
+<div class="main">
+<h2>TITLE HEADING</h2>
+<h5>Title description, Dec 7, 2017</h5>
+<div class="fakeimg" style="height:200px;">Image</div>
+<p>Some text..</p>
+<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 <br>
-<br>
-کلیه حقوق این سایت محفوظ می باشد.
-<br>
-<br>
-<div class="ltr">
-&copy;Copyright <a href="http://webgoo.ir" title="Webgoo">Webgoo.ir</a>
+<h2>TITLE HEADING</h2>
+<h5>Title description, Sep 2, 2017</h5>
+<div class="fakeimg" style="height:200px;">Image</div>
+<p>Some text..</p>
+<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 </div>
 </div>
+
+<div class="footer">
+<h2>Footer</h2>
 </div>
-<hr>
-- 
-<br><br>
-- 
+
 </body>
-</html>
+</html
