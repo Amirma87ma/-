@@ -159,7 +159,7 @@ width: 100%;
    </script>
 
 <div class="row">
-<marquee>تست</marquee>
+<marquee behavior="slide" bgcolor="#ff0000">رنگ مورد نظر را انتخاب کنید </marquee>
 </div>
 <div class="side">
 <h2 style="font-family:arial; color:#000000;">About Me</h2>
