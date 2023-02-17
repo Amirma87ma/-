@@ -15,7 +15,7 @@ margin: 0;
 .header {
 padding: 90px;
 text-align: center;
-background: #1abc9c;
+background: #1abb9c;
 color: white;
 }
 .header h1 {
@@ -159,12 +159,14 @@ width: 100%;
    </script>
 
 <div class="row">
+تست
+</div>
 <div class="side">
 <h2 style="font-family:arial; color:#000000;">About Me</h2>
 <P style="font-family:arial; color:#000000;">i am batman </P>
 <H2 style="font-family:arial; color:#000000;">servers</H2>
 <a href="https://discord.gg/TcvA7tU8ue" class="mybutton green">GB closet</a>
-
+</Div>
 
 </body>
 </html>
