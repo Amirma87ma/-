@@ -103,6 +103,9 @@ padding: 20px;
 .green{
  background-color:#4CAF50;
 }
+.gray{
+ background-color:#817f79;
+}
 .footer {
 padding: 20px;
 text-align: center;
@@ -166,6 +169,9 @@ width: 100%;
 <P style="font-family:arial; color:#000000;">i am batman </P>
 <H2 style="font-family:arial; color:#000000;">servers</H2>
 <a href="https://discord.gg/TcvA7tU8ue" class="mybutton green">GB closet</a>
+<br>
+<a href="https://discord.gg/gtFrKAa5Ms" class="mybutton gray">PHOENIX</a>
+
 </Div>
 
 
