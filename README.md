@@ -56,7 +56,8 @@ flex-wrap: wrap;
 .side {
 -ms-flex: 30%; /* IE10 */
 flex: 30%;
-background-color: #FDF5E6;
+background:https://www.freepik.com/free-vector/hazy-black-ink-texture-with-brushstrokes_18788390.htm#query=black%20background%20texture&position=6&from_view=search&track=ais no-repeat;
+
 padding: 20px;
 }
 .main {
