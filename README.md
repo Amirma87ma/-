@@ -70,6 +70,12 @@ background-color: #aaa;
 width: 100%;
 padding: 20px;
 }
+.join {
+-ms-flex: 70%; /* IE10 */
+flex: 70%;
+background-color: green;
+padding: 20px;
+}
 .footer {
 padding: 20px;
 text-align: center;
@@ -107,12 +113,7 @@ width: 100%;
 <a href="#" class="right">Link</a>
 </div>
 
-<div class="row">
-<div class="side">
-<h2 style="font-family:arial; color:#000000;">About Me</h2>
-<P style="font-family:arial; color:#000000;">i am batman </P>
-<H2 style="font-family:arial; color:#000000;">servers</H2>
-<a href="https://discord.gg/3XAvay8sMW" class="active">GB</a>
+
 
 <div class="footer">
 
@@ -128,6 +129,11 @@ width: 100%;
       }, 100);
    </script>
 
-
+<div class="row">
+<div class="side">
+<h2 style="font-family:arial; color:#000000;">About Me</h2>
+<P style="font-family:arial; color:#000000;">i am batman </P>
+<H2 style="font-family:arial; color:#000000;">servers</H2>
+<a href="https://discord.gg/3XAvay8sMW" class="active">GB</a>
 </body>
 </html>
