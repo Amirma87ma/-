@@ -28,6 +28,11 @@ position: sticky;
 position: -webkit-sticky;
 top: 0;
 }
+<script language="javascript" type="text/javascript">
+
+alert(" خوش اومدی ")
+
+</script>
 .navbar a {
 float: left;
 display: block;
@@ -163,6 +168,11 @@ width: 100%;
 <a href="https://discord.gg/TcvA7tU8ue" class="mybutton green">GB</a>
 
 
+
+
+
+
+<b> <a href="http://www.behtarinabzar.ir/">دریافت کد خوش آمد گویی </a></b>
 
 </body>
 </html>
