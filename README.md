@@ -13,7 +13,7 @@ font-family: Arial, Helvetica, sans-serif;
 margin: 0;
 }
 .header {
-padding: 80px;
+padding: 90px;
 text-align: center;
 background: #1abc9c;
 color: white;
