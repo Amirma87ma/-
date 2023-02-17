@@ -56,7 +56,7 @@ flex-wrap: wrap;
 .side {
 -ms-flex: 30%; /* IE10 */
 flex: 30%;
-background-color: #f1f1f1;
+background-color: #FDF5E6;
 padding: 20px;
 }
 .main {
