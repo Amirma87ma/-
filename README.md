@@ -136,5 +136,6 @@ width: 100%;
 <P style="font-family:arial; color:#000000;">i am batman </P>
 <H2 style="font-family:arial; color:#000000;">servers</H2>
 <a href="https://discord.gg/3XAvay8sMW" class="active">GB</a>
+<img src="https://www.freepik.com/premium-psd/3d-icon-logo-discord-minimalist_16725522.htm#page=2&query=Discord%20icon&position=17&from_view=search&track=ais" alt="Image" title="Image" width="200" height="200" border="0">
 </body>
 </html>
