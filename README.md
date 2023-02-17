@@ -132,9 +132,8 @@ width: 100%;
 <body>
 
 <div class="header">
-<h1>سایت بتمن در واقعیت </h1>
-<p style="font-family:arial; color:#FF0000;">!من بتمنم</p>
-<video autoplay width="250" height="260" id="myvid" controls preload="auto"  onloadeddata="ply()"><source src="https://hajifirouz10.asset.aparat.com/aparat-video/775a611c03aa7f5d8393e97479cfa58050483392-144p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImU0MjNiMzYzMjQwNTIyZTcwNGZjMTY4NjY2NGE4NTg1IiwiZXhwIjoxNjc2NjQ1Nzg3LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.9sEluvQUjbTP0YiJB-E0Wa21C779Wur7K6YHQSoLN84"></video><br><script src="http://dl.codebazan.ir/uploads/1580469451.js"></script>
+<h1>amir_ma</h1>
+<p style="font-family:arial; color:#FF0000;">خوش اومدی</p>
 
 </div>
 
@@ -166,7 +165,7 @@ width: 100%;
 </div>
 <div class="side">
 <h2 style="font-family:arial; color:#000000;">About Me</h2>
-<P style="font-family:arial; color:#000000;">i am batman </P>
+<P style="font-family:arial; color:#000000;">-</P>
 <H2 style="font-family:arial; color:#000000;">servers</H2>
 <a href="https://discord.gg/TcvA7tU8ue" class="mybutton green">GB closet</a>
 <br>
