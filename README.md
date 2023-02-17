@@ -159,7 +159,7 @@ width: 100%;
    </script>
 
 <div class="row">
-تست
+<marquee>تست</marquee>
 </div>
 <div class="side">
 <h2 style="font-family:arial; color:#000000;">About Me</h2>
