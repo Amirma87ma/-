@@ -71,11 +71,36 @@ background-color: #aaa;
 width: 100%;
 padding: 20px;
 }
-.join {
--ms-flex: 70%; /* IE10 */
-flex: 70%;
-background-color: green;
-padding: 20px;
+
+*{
+ box-sizing:border-box;
+}
+
+.mybutton{
+ background-color:#2196F3;
+ width: 100%;
+ border:none;
+ border-radius:7px;
+ color:#fff;
+ padding:10px 25px;
+ text-align:center;
+ font-size:16px;
+ cursor:pointer;
+ transition:0.7s;
+ margin-bottom:10px;
+ display:block;
+ text-decoration:none;
+}
+
+.mybutton:hover{
+ background-color:#555;
+ border-radius:15px;
+}
+
+
+
+.green{
+ background-color:#4CAF50;
 }
 .footer {
 padding: 20px;
@@ -135,7 +160,9 @@ width: 100%;
 <h2 style="font-family:arial; color:#000000;">About Me</h2>
 <P style="font-family:arial; color:#000000;">i am batman </P>
 <H2 style="font-family:arial; color:#000000;">servers</H2>
-<a href="https://discord.gg/3XAvay8sMW" class="active">GB</a>
-<img src="https://www.freepik.com/premium-psd/3d-icon-logo-discord-minimalist_16725522.htm#page=2&query=Discord%20icon&position=17&from_view=search&track=ais" alt="Image" title="Image" width="200" height="200" border="0">
+<a href="https://discord.gg/TcvA7tU8ue" class="mybutton green">GB</a>
+
+
+
 </body>
 </html>
