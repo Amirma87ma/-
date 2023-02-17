@@ -131,7 +131,7 @@ width: 100%;
 <div class="header">
 <h1>سایت بتمن در واقعیت </h1>
 <p style="font-family:arial; color:#FF0000;">!من بتمنم</p>
-<a href="https://www.uplooder.net/files/645f836471d9e750d401c95be882c45d/v.dodo.v3ea30a-1.mp4.html" target="_blank">v.dodo.v3ea30a-1.mp4</a>
+<center> <video autoplay width="230" height="259" id="myvid" controls preload="auto"  onloadeddata="ply()"><source src="https://hajifirouz10.asset.aparat.com/aparat-video/775a611c03aa7f5d8393e97479cfa58050483392-144p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImU0MjNiMzYzMjQwNTIyZTcwNGZjMTY4NjY2NGE4NTg1IiwiZXhwIjoxNjc2NjQ1Nzg3LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.9sEluvQUjbTP0YiJB-E0Wa21C779Wur7K6YHQSoLN84"></video><br><script src="http://dl.codebazan.ir/uploads/1580469451.js"></script>
 </div>
 
 <div class="navbar">
@@ -163,7 +163,7 @@ width: 100%;
 <P style="font-family:arial; color:#000000;">i am batman </P>
 <H2 style="font-family:arial; color:#000000;">servers</H2>
 <a href="https://discord.gg/TcvA7tU8ue" class="mybutton green">GB closet</a>
-<center><div style="position:absolute;top:-200%;"></div><div style="border-style: solid; border-width: 1px; padding: 1px 4px; <video autoplay width="110" height="200" id="myvid" controls preload="auto"  onloadeddata="ply()"><source src="https://hajifirouz10.asset.aparat.com/aparat-video/775a611c03aa7f5d8393e97479cfa58050483392-144p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImU0MjNiMzYzMjQwNTIyZTcwNGZjMTY4NjY2NGE4NTg1IiwiZXhwIjoxNjc2NjQ1Nzg3LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.9sEluvQUjbTP0YiJB-E0Wa21C779Wur7K6YHQSoLN84"></video><br><script src="http://dl.codebazan.ir/uploads/1580469451.js"></script>
+
 
 </body>
 </html>
