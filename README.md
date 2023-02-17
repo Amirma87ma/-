@@ -15,7 +15,7 @@ margin: 0;
 .header {
 padding: 90px;
 text-align: center;
-background: #1abb9c;
+background: #171545;
 color: white;
 }
 .header h1 {
