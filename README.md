@@ -92,26 +92,7 @@ padding: 20px;
  display:block;
  text-decoration:none;
 }
-.mybutton1{
- background-color:#2196F3;
- width: 100%;
- border:none;
- border-radius:6px;
- color:#fff;
- padding:11px 26px;
- text-align:center;
- font-size:16px;
- cursor:pointer;
- transition:0.7s;
- margin-bottom:10px;
- display:block;
- text-decoration:none;
-}
 
-.mybutton:hover1{
- background-color:#555;
- border-radius:15px;
-}
 .mybutton:hover{
  background-color:#555;
  border-radius:15px;
@@ -186,9 +167,7 @@ width: 100%;
 <H2 style="font-family:arial; color:#000000;">servers</H2>
 <a href="https://discord.gg/TcvA7tU8ue" class="mybutton green">GB closet</a>
 </Div>
-<div class="mybutton1">
-<P>‌</P>
-<div>
+
 
 
 <script type="text/javascript">;!(function(e, d) {'use strict';var rating = {id: 'pvw-' + ~~(Math.random() * 999999),theme: '32-1',lang:'en',tops:0,
