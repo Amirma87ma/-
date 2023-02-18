@@ -104,7 +104,7 @@ padding: 20px;
  background-color:#4CAF50;
 }
 .gray{
- background-color:#817f79;
+ background-color:#e09604;
 }
 .footer {
 padding: 20px;
@@ -174,10 +174,6 @@ width: 100%;
 </Div>
 
 
-<script type="text/javascript">;!(function(e, d) {'use strict';var rating = {id: 'pvw-' + ~~(Math.random() * 999999),theme: '32-1',lang:'en',tops:0,
-url: '',
-title: ''
-};if (typeof e.prwAttrs != 'object') e.prwAttrs = {};e.prwAttrs[rating.id] = rating;d.write('<d'+'iv id="' + rating.id + '" style="display: inline-block"></d'+'iv>');d.write('<scr'+'ipt type="text/javascript" src="http://code.parstools.com/async/rate/rate.js" async></scri' + 'pt>');})(window, document);</script>
 
 </body>
 </html>
