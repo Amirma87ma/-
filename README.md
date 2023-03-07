@@ -1,4 +1,3 @@
-#‌j
 <html lang="en">
 <head>
 
@@ -63,8 +62,9 @@
     }
     .fakeimg {
         margin-top: 16px;
-        align-self: center;
-        background: #000000;           background: -webkit-gradient(linear, left top, left bottom, from(#667), to(#555));
+        text-align: center;
+    
+        background: #000000;           background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#555));
         border-radius: 14px;
         background-color: #000000;
         width: 100%;
@@ -130,29 +130,40 @@ border-width: 1px;
         border-radius: 15px;
       font-weight: 500;
       line-height: 19px;
-      opacity: 1;
       width: 80%;
       height: 4%;
-     position:static;
+    
+     
      
     }
 
     .mybutton:hover {
         background-color: #555;
         border-radius: 15px;
-
+        border-top-style: solid;
+        border-top-color: #666;
+        border-bottom-style: solid;
+        border-bottom-color: #555;
+        
     }
 
 
 
     .green {
         background-color: #4CAF50;
-    
+    border-top-style: solid;
+        border-top-color: #4CAF50;
+        border-bottom-style: solid;
+        border-bottom-color: green;
 
     }
     .gray {
         background-color: #e09604;
-        r
+        border-top-style: solid;
+        border-top-color: #e09604;
+        border-bottom-style: solid;
+        border-bottom-color: #CC6600;
+        
     }
     .footer {
     
@@ -217,11 +228,12 @@ hello, my name is amir mahdi
 <br>
 <h3>servers</h3>
 <div class="mybutton green">
-<a herf="#">test</a>
+<a herf="#">GB</a>
 </div>
 <br>
+<br>
 <div class="mybutton gray">
-<a herf="#">test</a>
+<a herf="#">-</a>
 </div>
 <br>
 <br>
