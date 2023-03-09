@@ -1,9 +1,8 @@
-<html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <style>
         * {
             box-sizing: border-box;
         }
@@ -109,6 +108,57 @@ border-width: 1px;
     * {
         box-sizing: border-box;
     }
+   
+ 
+/* just to remove default margins and paddings, kinda make everything looks better */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+  
+/* the container just aligns the card at the center of the body */
+.container{
+  perspective: 1000px;
+  position: absolute;
+ 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card{
+  transform-style: preserve-3d;
+  width: 350px;
+  background: white;
+  box-shadow: 0 0 3px grey;
+  border-radius: 5px;
+  margin: auto;
+  cursor: pointr;
+}
+
+.inner-card{
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: dodgerblue;
+  transition: 0.5s;
+}
+.card:hover > .inner-card{
+  animation: clip 1.5s;
+}
+    
+
+@keyframes clip{
+  0%{
+    clip-path: circle(10% at 0px 0px);
+  }
+  100%{
+    clip-path: circle(100%);
+  }
+}
+
 
     .mybutton {
           
@@ -136,17 +186,27 @@ border-width: 1px;
      
      
     }
+    
 
     .mybutton:hover {
-        background-color: #555;
+        background-color: #033A17;
         border-radius: 15px;
         border-top-style: solid;
-        border-top-color: #666;
+        border-top-color: #033A17;
         border-bottom-style: solid;
-        border-bottom-color: #555;
+        border-bottom-color: #033A17;
+        animation-name: e;
+        animation-duration: 4s;
         
     }
-
+@keyframes e {
+  from {background-color: red;}
+  to {background-color: #033A17 ;}
+  from {border-top-color: #F55050;}
+  to {border-top-color: #033A17;}
+  from {border-bottom-color: red;}
+  to {border-bottom-color: #033A17;}
+}
 
 
     .green {
@@ -168,7 +228,7 @@ border-width: 1px;
     .footer {
     
 height: 100%;
-	box-shadow: 0px -2px -2px #000;
+  box-shadow: 0px -2px -2px #000;
         padding: 20px;
         padding-bottom: 1000px;
         text-align: center;
@@ -190,95 +250,89 @@ height: 100%;
     body {
         color: white;
     }
-</style>
-</head>
-<body>
-<div class="navbr">
+</style> 
+ </head> 
+ <body> 
+  <div class="navbr"> 
+   <p style="text-align:right"></p> 
+  </div> 
+  <div class="header"> 
+   <div class="container"> 
+    <div class="card" id="card" onmouseover="moving(event)" onmouseout="stopmoving()"> 
+     <div class="inner-card"> 
+      <h3>amir_ma</h3> 
+     </div> 
+    </div> 
+   </div> 
+   <script>
+var card = document.getElementById('card');
+  
+function moving(event){
+    let xaxis = (window.innerWidth / 2 - event.pageX) / 10;
+    let yaxis = (window.innerHeight / 2 - event.pageY) / 10;
+    card.style.transform = 'rotateY('+xaxis+'deg) rotateX('+yaxis+'deg)';
+}
 
-<p style="text-align:right"></p>
-</div>
-<div class="header">
-<h1>amir_ma</h1>
-<p style="font-family:arial; color:#FF0000;">welcome</p>
-
-</div>
-    
-
-
-		
-		
-
-
-
-<div class="footer" style="font-size:20px">
-
-
-
-<br>
-<div class="fakeimg">
-<br>
-
-<br>
-
-<p >
-hello, my name is amir mahdi
-</p>
-
-
-<br>
-<h3>servers</h3>
-<div class="mybutton green">
-<a herf="#">GB</a>
-</div>
-<br>
-<br>
-<div class="mybutton gray">
-<a herf="#">-</a>
-</div>
-<br>
-<br>
-<br>
-
-
-    <br>
- 
-<br>
-<br>
-<p>‌</p>
-<br>
-<br>
-<br>
-<p>‌</p>
-
-<br>
-<br>
-<br>
-<br>
-</div>
-<div class="fakeimg2" style="margin-top:28px">
-    <br>
-  <h3>customize</h3>
-  <wbr>
-<h4>background Color</h4>
-<input id="color" type="color" value="fff">
-<br>
-<script>
+function stopmoving(){
+    card.style.transform = "rotateY(0deg) rotateX(0deg)";
+    card.style.transition = "0.5s";
+}
+</script> 
+   <p style="font-family:arial; color:#FF0000;">welcome</p> 
+  </div> 
+  <div class="footer" style="font-size:20px"> 
+   <br> 
+   <div class="fakeimg"> 
+    <br> 
+    <br> 
+    <p> hello,....</p> 
+    <br> 
+    <h3>servers</h3> 
+    <div class="mybutton green"> <a herf="#">-</a> 
+    </div> 
+    <br> 
+    <br> 
+    <div class="mybutton gray"> <a herf="#">-</a> 
+    </div> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+    <p>‌</p> 
+    <br> 
+    <br> 
+    <br> 
+    <p>‌</p> 
+    <br> 
+    <br> 
+    <br> 
+    <br> 
+   </div> 
+   <div class="fakeimg2" style="margin-top:28px"> 
+    <br> 
+    <h3>customize</h3> 
+    <wbr> 
+    <h4>background Color</h4> 
+    <input id="color" type="color" value="fff"> 
+    <br> 
+    <script>
 setInterval(() => {
 let color = document.getElementById('color');
 let colorValue = color.value;
 document.body.style.backgroundColor = colorValue;
 }, 100);
-</script>
-<br>
-<br>
-<br>
-<p>‌</p>
-<br>
-<br>
-<br>
-<p>‌</p>
-</div>
-</div>
-</body>
-
+</script> 
+    <br> 
+    <br> 
+    <br> 
+    <p>‌</p> 
+    <br> 
+    <br> 
+    <br> 
+    <p>‌</p> 
+   </div> 
+  </div> 
+ </body>
 </html>
