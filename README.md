@@ -287,12 +287,12 @@ function stopmoving(){
     <br> 
     <p> hello,....</p> 
     <br> 
-    <h3>servers</h3> 
-    <div class="mybutton green"> <a herf="#">-</a> 
+    <h3>servers</h3>
+    <div class="mybutton green"> <a herf="https://discord.gg/TcvA7tU8ue">-</a> 
     </div> 
     <br> 
     <br> 
-    <div class="mybutton gray"> <a herf="#">-</a> 
+    <div class="mybutton gray"> <a herf="https://discord.gg/vxVWBxZ3Rz">-</a> 
     </div> 
     <br> 
     <br> 
