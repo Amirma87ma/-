@@ -1,313 +1,329 @@
-<html lang="en"> 
- <head> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            background-color: #ddd;
-              -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      user-select: none;
-      margin: 0;
-      padding: 0;
-        max-height: 100%;
-      font-family: 'Roboto', Arial, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      font-size: 16px;
-        }
-         
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript">
 
 
-        .header {            background: #E7E7E7;           background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#8886));
-            padding: 80px;
-            
-            text-align: center;
-            
-            color: white;
-        }
-        .header h1 {
-            font-size: 40px;
-        }
-
-        .row {
-            display: -ms-flexbox;
-            /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap;
-            /* IE10 */
-            flex-wrap: wrap;
-        }
-        .a {
-            overflow: hidden;
-            background-color: #333;
-            position: sticky;
-            position: -webkit-sticky;
-            top: 0;
-        }
-
-    }
-
-    .main {
-        -ms-flex: 70%;
-        /* IE10 */
-        flex: 70%;
-        background-color: white;
-        padding: 20px;
-    }
-    .fakeimg {
-        margin-top: 16px;
-        text-align: center;
-    
-        background: #000000;           background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#555));
-        border-radius: 14px;
-        background-color: #000000;
-        width: 100%;
-    height: 450px;
-webkit-box-shadow:inset 4px 4px 4px rgba(0,0,0,0.28), 10px 0 rgba(255,255,255,0.42);
-box-shadow:inset 4px 4px 4px rgba(0,0,0,0.28), 0 1px 0 rgba(255,255,255,0.42);
-box-shadow:inset 4px 4px 6px rgba(,0,0,0.28), 0 1px 0 rgba(255,255,255,0.42);
--moz-box-sizing:border-box;
--webkit-box-sizing:border-box;
-box-sizing:border-box;
-border-right: solid;
-border-bottom: solid;
-border-color: gray;
-border-width: 1px;
-        max-width: 800px;
-        margin: auto;
-    }
-        .fakeimg2 {
-        background: #000000;           background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#222));
-        border-radius: 14px;
-        background-color: #000000;
-        width: 100%;
-    height: 430px;
-webkit-box-shadow:inset 10px 20px 10px rgba(0,0,0,0.28), 10px 0 rgba(255,255,255,0.42);
-box-shadow:inset 10px 10px 10px rgba(0,0,0,0.28), 0 1px 0 rgba(255,255,255,0.42);
-box-shadow:inset 5px 5px 6px rgba(0,0,0,0.28), 0 1px 0 rgba(255,255,255,0.42);
--moz-box-sizing:border-box;
--webkit-box-sizing:border-box;
-box-sizing:border-box;
-border-right: solid;
-border-bottom: solid;
-border-color: gray;
-border-width: 1px;
-        max-width: 800px;
-        margin: auto;
-    }
-    
-        
-
-    
-
-    * {
-        box-sizing: border-box;
-    }
-   
- 
-/* just to remove default margins and paddings, kinda make everything looks better */
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-  
-/* the container just aligns the card at the center of the body */
-.container{
-  perspective: 1000px;
-  position: absolute;
- 
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.card{
-  transform-style: preserve-3d;
-  width: 350px;
-  background: white;
-  box-shadow: 0 0 3px grey;
-  border-radius: 5px;
-  margin: auto;
-  cursor: pointr;
-}
-
-.inner-card{
-  padding: 15px;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  background: dodgerblue;
-  transition: 0.5s;
-}
-.card:hover > .inner-card{
-  animation: clip 1.5s;
-}
-    
-
-@keyframes clip{
-  0%{
-    clip-path: circle(10% at 0px 0px);
-  }
-  100%{
-    clip-path: circle(100%);
-  }
-}
 
 
-    .mybutton {
-          
-        background-color: #2196F3;
-         
-      border-radius: 10px;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23);
-      box-sizing: border-box;
-      -webkit-flex-basis: 100%;
-      -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-      max-width: 600px;
-      max-height: 4px;
-      margin: 0 auto;
-      overflow: hidden;
-      padding: 20px;
-      position: relative;
-        font-size: 16px;
-        border-radius: 15px;
-      font-weight: 500;
-      line-height: 19px;
-      width: 80%;
-      height: 4%;
-    text-decoration: none;
-display: inline-block;
-     
-     
-    }
-    
-
-    .mybutton:hover {
-        background-color: #033A17;
-        border-radius: 15px;
-        border-top-style: solid;
-        border-top-color: #033A17;
-        border-bottom-style: solid;
-        border-bottom-color: #033A17;
-        animation-name: e;
-        animation-duration: 4s;
-        
-    }
-@keyframes e {
-  from {background-color: red;}
-  to {background-color: #033A17 ;}
-  from {border-top-color: #F55050;}
-  to {border-top-color: #033A17;}
-  from {border-bottom-color: red;}
-  to {border-bottom-color: #033A17;}
-}
+	</script>
+	<title>amir</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: consolas;
+		}
+		body
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background: #1f061a;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background: #1f061a;
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+			background-color: #733;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			user-select: none;
+			margin: 0;
+			padding: 0;
+			max-height: 100%;
+			font-family: 'Roboto', Arial, sans-serif;
+			-webkit-font-smoothing: antialiased;
+			font-size: 16px;
+		}
 
 
-    .green {
-        background-color: #4CAF50;
-    border-top-style: solid;
-        border-top-color: #4CAF50;
-        border-bottom-style: solid;
-        border-bottom-color: green;
 
-    }
-    .gray {
-        background-color: #e09604;
-        border-top-style: solid;
-        border-top-color: #e09604;
-        border-bottom-style: solid;
-        border-bottom-color: #CC6600;
-        
-    }
-    .footer {
-    
-height: 100%;
-  box-shadow: 0px -2px -2px #000;
-        padding: 20px;
-        padding-bottom: 1000px;
-        text-align: center;
-        background: #8886;
-    }
-@media screen and (max-width: 500px) {
-        .row {
-            flex-direction: column;
-        }
-    }
-@media screen and (max-width: 400px) {
-        .navbar a {
-            float: none;
-            width: 100%;
-        }
-    }
+@keyframes clip {
+			0% {
+				clip-path: circle(1% at 1px 0px);
+			}
+			100% {
+				clip-path: circle(100%);
+				background-color: #FF0000;
 
 
-    body {
-        color: white;
-    }
-</style> 
- </head> 
- <body> 
-  <div class="navbr"> 
-   <p style="text-align:right"></p> 
-  </div> 
-  <div class="header"> 
-   <div class="container"> 
-    <div class="card" id="card" onmouseover="moving(event)" onmouseout="stopmoving()"> 
-     <div class="inner-card"> 
-      <h3>amir_ma</h3> 
-<P>my name is Amir mahdi</P>
-     </div> 
-    </div> 
-   </div> 
-   
-   <p style="font-family:arial; color:#FF0000;">welcome</p> 
-  </div> 
-  <div class="footer" style="font-size:20px"> 
-   <br> 
-   <div class="fakeimg"> 
-    <br> 
-    <br> 
-    
-    <br> 
-    <h3>servers</h3> 
+			}
+		}
+		.color {
 
- <a href="https://discord.gg/m6wpCGWe" class="mybutton green" >    GB     </a> 
- <br>
- <br>
-  <a href="#" class="mybutton gray" >#</a> 
-    </div> 
+			position: relative;
+			border: none;
+			background: none;
+			padding-left: 1000px;
+			padding-right: 10000px;
+			padding-bottom: 100px;
+			padding-top: 100px;
+			margin: -100px;
 
-   
-   <div class="fakeimg2" style="margin-top:28px"> 
-    <br> 
-    <h3>customize</h3> 
-    <wbr> 
-    <h4>background Color</h4> 
-    <input id="color" type="color" value="fff"> 
-    <br> 
-    <script>
-setInterval(() => {
-let color = document.getElementById('color');
-let colorValue = color.value;
-document.body.style.backgroundColor = colorValue;
-}, 100);
-</script> 
-    <br> 
-    <br> 
-    <br> 
-    <p>‌</p> 
-    <br> 
-    <br> 
-    <br> 
-    <p>‌</p> 
-   </div> 
-  </div> 
- </body>
+			transform: skew(50deg);
+		}
+
+		.container
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin-top: 400px;
+		}
+		.box
+		{
+			position: relative;
+			width: 320px;
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 40px 30px;
+			transition: 0.5s;
+
+		}
+		.box:before
+		{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50px;
+			width: 50%;
+			height: 100%;
+			border-radius: 8px;
+			transform: skewX(15deg);
+			transition: 0.5s;
+		}
+		.box:after
+		{
+
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50px;
+			width: 50%;
+			height: 100%;
+			border-radius: 8px;
+			transform: skewX(15deg);
+			filter: blur(30px);
+			transition: 0.5s;
+		}
+		.box:nth-child(3):before,
+		.box:nth-child(3):after
+		{
+			transform: skewX(-15deg);
+		}
+		.box:hover:before,
+		.box:hover:after
+		{
+			transform: skewX(0deg);
+			left: 20px;
+			width: calc(100% - 90px);
+		}
+		.box:nth-child(1):before,
+		.box:nth-child(1):after
+		{
+			background: linear-gradient(45deg,#AD1480,#5A0CCF);
+		}
+		.box:nth-child(2):before,
+		.box:nth-child(2):after
+		{
+			background: linear-gradient(315deg,#71B725,#97A427);
+		}
+		.box:nth-child(3):before,
+		.box:nth-child(3):after
+		{
+			background: linear-gradient(315deg,#A3D55A,#3888C5);
+		}
+
+		.box .content
+		{
+			position: relative;
+			left: 0;
+			z-index: 1;
+			padding: 30px 40px;
+			color: white;
+			box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+			background: rgba(255,255,255,0.09);
+			backdrop-filter: blur(10px);
+			border-radius: 8px;
+			transition: 0.5s;
+		}
+
+		.box:hover .content
+		{
+			left: -25px;
+			padding: 60px 40px;
+		}
+
+		.box .content p
+		{
+			font-size: 1.1em;
+			color: #fff;
+			margin-bottom: 10px;
+			line-height: 1.4em;
+		}
+
+		.mybutton {
+			width: 300px;
+			height: 40px;
+			color: #fff;
+			text-decoration: none;
+			text-align: center;
+			border-radius: 14px;
+			padding: 10px 25px;
+			font-family: 'Lato', sans-serif;
+			font-weight: 800;
+			background: transparent;
+
+			text-decoration: none;
+			transition: all 0.3s ease;
+			position: relative;
+			display: inline-block;
+			box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+			7px 7px 20px 0px rgba(0,0,0,.1),
+			4px 4px 5px 0px rgba(0,0,0,.1);
+			outline: none;
+
+
+			background: rgb(251,33,117);
+
+			color: #fff;
+			overflow: hidden;
+		}
+		.mybutton:hover {
+			text-decoration: none;
+			color: #fff;
+		}
+		.mybutton:before {
+			position: absolute;
+			content: '';
+			display: inline-block;
+			top: -180px;
+			left: 0;
+			width: 30px;
+			height: 100%;
+			background-color: #fff;
+			animation: shiny-btn1 3s ease-in-out infinite;
+		}
+		.mybutton:hover {
+			opacity: 0.7;
+		}
+		.mybutton:active {
+			box-shadow: 4px 4px 6px 0 rgba(255,255,255,.3),
+			-4px -4px 6px 0 rgba(116, 125, 136, .2),
+			inset -4px -4px 6px 0 rgba(255,255,255,.2),
+			inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+		}
+
+
+@-webkit-keyframes shiny-btn1 {
+			0% {
+				-webkit-transform: scale(0) rotate(45deg);
+				opacity: 0;
+			}
+			80% {
+				-webkit-transform: scale(0) rotate(45deg);
+				opacity: 0.5;
+			}
+			81% {
+				-webkit-transform: scale(4) rotate(45deg);
+				opacity: 1;
+			}
+			100% {
+				-webkit-transform: scale(50) rotate(45deg);
+				opacity: 0;
+			}
+		}
+		.btn {
+			width: 100px;
+			height: 40px;
+			text-decoration: none;
+			text-align: center;
+			border-radius: 14px;
+			background: transparent;
+			text-decoration: none;
+			transition: all 0.3s ease;
+			position: relative;
+			display: inline-block;
+			box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+			7px 7px 20px 0px rgba(0,0,0,.1),
+			4px 4px 5px 0px rgba(0,0,0,.1);
+			outline: none;
+			overflow: hidden;
+		}
+
+	</style>
+</head>>
+<body>
+
+	<div class="container">
+		<div class="box">
+			<div class="content">
+				<h2>Amir_ma</h2>
+				<p>
+					my name is amir mahdi , I am Iranian
+				</p>
+				<p>
+					hahahahahhhhhhhhhhhh
+				</p>
+				<p>
+					i am batman
+				</p>
+			</div>
+		</div>
+
+
+		<div class="box" style="margin-top:20px">
+
+			<div class="content">
+				<br>
+				<h2>servers</h2>
+
+				<a href="https://discord.gg/m6wpCGWe" class="mybutton" style="background-color:#971F51">    GB     </a>
+				<br>
+				<br>
+				<a href="#" class="mybutton" style="background-color:orange">#</a>
+			</div>
+		</div>
+
+		<div class="box" style="margin-inline-start:px">
+			<div class="content">
+				<br>
+				<h2>       customize         </h2>
+				<br>
+				<h4>background Color </h4>
+				<h6 style="Color:black"> * To change the background color on the button below</h6>
+				<div class="btn" style="background-Color:#2577">
+
+					<input id="color" type="color" value="#733000" class="color" style="margin-right:5000px">
+
+
+					<script>
+						setInterval(() => {
+							let color = document.getElementById('color');
+							let colorValue = color.value;
+							document.body.style.backgroundColor = colorValue;
+						}, 100);
+					</script>
+
+
+
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+	</body>
 </html>
