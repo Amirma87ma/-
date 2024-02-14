@@ -1,329 +1,99 @@
-<!doctype html>
 <html>
 <head>
-	<script type="text/javascript">
+    <meta name="viewport" content="width=device-width">
+    <script src='file:///android_asset/app.js'></script>
+	
+<script>
+   // User variables
+var x1 = 0.5, x2 = 0.5, p1 = 0, p2 = 0;
+
+// Called when app started.
+function OnStart()
+{
+    app._156( "Portrait" );
+
+    lay = app._291( "Linear" );
+
+    img = app._292( null, 1, 1 );
+    img.SetOnTouch( img_OnTouch );
+    img.SetAutoUpdate( false );
+    img.SetTextSize( 30 );
+    lay.AddChild( img );
+
+    Score();
+    app._194( lay );
+    app._361( OnAnimate, 50 );
+}
+
+// Move user bar
+function img_OnTouch( ev ) { x2 = ev.X; }
+
+function crop( v, a ,b ) { return v < a ? a : v > b ? b : v; }
+
+// Calculate ball movement for a given deltatime
+var x, y, v = 0.5, dx = 0, dy = 0;
+function Calculate( dt )
+{
+    x += v * dx * dt / 1000;
+    y += v * dy * dt / 1000;
+    v += dt / 5e4;
+
+    if( dy < 0 && y < 0.5)
+        x1 += crop( 10 * (x - x1), -2, 2 ) * dt / 1000;
+
+    if( x < 0.02 ) dx = Math.abs(dx);
+    if( x > 0.98 ) dx = -Math.abs(dx);
+    if( y > 0.04 && y < 0.05 && x > x1 - 0.1 && x < x1 + 0.1 ) {
+        dy = Math.abs( dy );
+        dx += 5 * ( x1 - x );
+    }
+    if( y < 0.96 && y > 0.95 && x > x2 - 0.1 && x < x2 + 0.1 ) {
+        dy = -Math.abs( dy );
+        dx += 5 * ( x - x2 );
+    }
+    if( y < 0 ) Score( p2++ );
+    if( y > 1 ) Score( p1++ );
+}
+
+// Core loop
+function OnAnimate( t, dt, nodraw )
+{
+    // Calculate positions in 4 milliseconds steps
+    do { Calculate(4); dt -= 4; }
+    while( dt > 0 );
+
+    // Render state
+    img.Clear();
+    img.DrawCircle( x, y, 0.02 );
+    img.DrawText( p1, 0.05, 0.4 );
+    img.DrawText( p2, 0.05, 0.6 );
+    img.DrawRectangle( x1 - 0.1, 0.03, x1 + 0.1, 0.04 );
+    img.DrawRectangle( x2 - 0.1, 0.96, x2 + 0.1, 0.97 );
+    img.Update();
+}
+
+// Reset after score
+function Score()
+{
+    x = 0.5; dx = 0;
+    y = 0.5; dy = 0;
+    v = 0.5;
+    var PI = Math.PI;
+
+    setTimeout( function()
+    {
+        var a = Math.random() * PI;
+        if( a > PI/2 ) a += PI/2;
+        dx = Math.cos( a + PI/4 );
+        dy = Math.sin( a + PI/4 );
+    }, 1000 );
+}
+</script>
 
 
+</head>
+<body onload="app._357()">
 
-
-	</script>
-	<title>amir</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>
-		*
-		{
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-			font-family: consolas;
-		}
-		body
-		{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			min-height: 100vh;
-			background: #10061a;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			min-height: 100vh;
-			background: #1f060a;
-			font-family: Arial, Helvetica, sans-serif;
-			margin: 0;
-			background-color: #733;
-			-webkit-touch-callout: none;
-			-webkit-user-select: none;
-			user-select: none;
-			margin: 0;
-			padding: 0;
-			max-height: 100%;
-			font-family: 'Roboto', Arial, sans-serif;
-			-webkit-font-smoothing: antialiased;
-			font-size: 16px;
-		}
-
-
-
-@keyframes clip {
-			0% {
-				clip-path: circle(1% at 1px 0px);
-			}
-			100% {
-				clip-path: circle(100%);
-				background-color: #FF0000;
-
-
-			}
-		}
-		.color {
-
-			position: relative;
-			border: none;
-			background: none;
-			padding-left: 1000px;
-			padding-right: 10000px;
-			padding-bottom: 100px;
-			padding-top: 100px;
-			margin: -100px;
-
-			transform: skew(50deg);
-		}
-
-		.container
-		{
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			margin-top: 400px;
-		}
-		.box
-		{
-			position: relative;
-			width: 320px;
-			height: 400px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin: 40px 30px;
-			transition: 0.5s;
-
-		}
-		.box:before
-		{
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 50px;
-			width: 50%;
-			height: 100%;
-			border-radius: 8px;
-			transform: skewX(19deg);
-			transition: 0.5s;
-		}
-		.box:after
-		{
-
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 50px;
-			width: 50%;
-			height: 100%;
-			border-radius: 8px;
-			transform: skewX(83deg);
-			filter: blur(30px);
-			transition: 0.5s;
-		}
-		.box:nth-child(3):before,
-		.box:nth-child(3):after
-		{
-			transform: skewX(-5deg);
-		}
-		.box:hover:before,
-		.box:hover:after
-		{
-			transform: skewX(0deg);
-			left: 20px;
-			width: calc(100% - 10px);
-		}
-		.box:nth-child(1):before,
-		.box:nth-child(1):after
-		{
-			background: linear-gradient(45deg,#AD1480,#5A0CCF);
-		}
-		.box:nth-child(2):before,
-		.box:nth-child(2):after
-		{
-			background: linear-gradient(315deg,#71B725,#97A427);
-		}
-		.box:nth-child(3):before,
-		.box:nth-child(3):after
-		{
-			background: linear-gradient(315deg,#A3D55A,#3888C5);
-		}
-
-		.box .content
-		{
-			position: relative;
-			left: 0;
-			z-index: 1;
-			padding: 30px 40px;
-			color: white;
-			box-shadow: 0 5px 15px rgba(0,8,9,0.1);
-			background: rgba(255,5,55,0.09);
-			backdrop-filter: blur(10px);
-			border-radius: 8px;
-			transition: 0.5s;
-		}
-
-		.box:hover .content
-		{
-			left: -25px;
-			padding: 60px 40px;
-		}
-
-		.box .content p
-		{
-			font-size: 1.1em;
-			color: #fff;
-			margin-bottom: 10px;
-			line-height: 1.4em;
-		}
-
-		.mybutton {
-			width: 300px;
-			height: 40px;
-			color: #fff;
-			text-decoration: none;
-			text-align: center;
-			border-radius: 14px;
-			padding: 10px 25px;
-			font-family: 'Lato', sans-serif;
-			font-weight: 800;
-			background: transparent;
-
-			text-decoration: none;
-			transition: all 0.3s ease;
-			position: relative;
-			display: inline-block;
-			box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
-			7px 7px 20px 0px rgba(0,0,0,.1),
-			4px 4px 5px 0px rgba(0,0,0,.1);
-			outline: none;
-
-
-			background: rgb(251,33,117);
-
-			color: #fff;
-			overflow: hidden;
-		}
-		.mybutton:hover {
-			text-decoration: none;
-			color: #fff;
-		}
-		.mybutton:before {
-			position: absolute;
-			content: '';
-			display: inline-block;
-			top: -180px;
-			left: 0;
-			width: 30px;
-			height: 100%;
-			background-color: #fff;
-			animation: shiny-btn1 3s ease-in-out infinite;
-		}
-		.mybutton:hover {
-			opacity: 0.7;
-		}
-		.mybutton:active {
-			box-shadow: 4px 4px 6px 0 rgba(255,255,255,.3),
-			-4px -4px 6px 0 rgba(116, 125, 136, .2),
-			inset -4px -4px 6px 0 rgba(255,255,255,.2),
-			inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
-		}
-
-
-@-webkit-keyframes shiny-btn1 {
-			0% {
-				-webkit-transform: scale(0) rotate(45deg);
-				opacity: 0;
-			}
-			80% {
-				-webkit-transform: scale(0) rotate(45deg);
-				opacity: 0.5;
-			}
-			81% {
-				-webkit-transform: scale(4) rotate(45deg);
-				opacity: 1;
-			}
-			100% {
-				-webkit-transform: scale(50) rotate(45deg);
-				opacity: 0;
-			}
-		}
-		.btn {
-			width: 100px;
-			height: 40px;
-			text-decoration: none;
-			text-align: center;
-			border-radius: 14px;
-			background: transparent;
-			text-decoration: none;
-			transition: all 0.3s ease;
-			position: relative;
-			display: inline-block;
-			box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
-			7px 7px 20px 0px rgba(0,0,0,.1),
-			4px 4px 5px 0px rgba(0,0,0,.1);
-			outline: none;
-			overflow: hidden;
-		}
-
-	</style>
-</head>>
-<body>
-
-	<div class="container">
-		<div class="box">
-			<div class="content">
-				<h2>Amir_ma</h2>
-				<p>
-					my name is amir mahdi , I am Iranian
-				</p>
-				<p>
-					hahahahahhhhhhhhhhhh
-				</p>
-				<p>
-					i am batman
-				</p>
-			</div>
-		</div>
-
-
-		<div class="box" style="margin-top:20px">
-
-			<div class="content">
-				<br>
-				<h2>servers</h2>
-
-				<a href="https://discord.gg/m6wpCGWe" class="mybutton" style="background-color:#971F51">    GB     </a>
-				<br>
-				<br>
-				<a href="#" class="mybutton" style="background-color:orange">#</a>
-			</div>
-		</div>
-
-		<div class="box" style="margin-inline-start:px">
-			<div class="content">
-				<br>
-				<h2>       customize         </h2>
-				<br>
-				<h4>background Color </h4>
-				<h6 style="Color:black"> * To change the background color on the button below</h6>
-				<div class="btn" style="background-Color:#2577">
-
-					<input id="color" type="color" value="#733000" class="color" style="margin-right:5000px">
-
-
-					<script>
-						setInterval(() => {
-							let color = document.getElementById('color');
-							let colorValue = color.value;
-							document.body.style.backgroundColor = colorValue;
-						}, 100);
-					</script>
-
-
-
-				</div>
-
-
-			</div>
-
-		</div>
-
-
-	</body>
+	
+</body>
 </html>
