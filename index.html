@@ -1,166 +1,60 @@
-<html lang="en"> 
- <head> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            background-color: #ddd;
-              -webkit-touch-callout: none;
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+
+	body {
+line-height:1.5;
+  padding: 20px;
+  background-color: White;
+  font-size: 25px;
+                -webkit-touch-callout: none;
       -webkit-user-select: none;
       user-select: none;
       margin: 0;
-      padding: 0;
+
         max-height: 100%;
       font-family: 'Roboto', Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       font-size: 16px;
-        }
-         
-
-
-        .header {            background: #E7E7E7;           background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#8886));
-            padding: 80px;
-            
-            text-align: center;
-            
-            color: white;
-        }
-        .header h1 {
-            font-size: 40px;
-        }
-
-        .row {
-            display: -ms-flexbox;
-            /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap;
-            /* IE10 */
-            flex-wrap: wrap;
-        }
-        .a {
-            overflow: hidden;
-            background-color: #333;
-            position: sticky;
-            position: -webkit-sticky;
-            top: 0;
-        }
-
-    }
-
-    .main {
-        -ms-flex: 70%;
-        /* IE10 */
-        flex: 70%;
-        background-color: white;
-        padding: 20px;
-    }
-    .fakeimg {
-        margin-top: 16px;
-        text-align: center;
-    
-        background: #000000;           background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#555));
-        border-radius: 14px;
-        background-color: #000000;
-        width: 100%;
-    height: 450px;
-webkit-box-shadow:inset 4px 4px 4px rgba(0,0,0,0.28), 10px 0 rgba(255,255,255,0.42);
-box-shadow:inset 4px 4px 4px rgba(0,0,0,0.28), 0 1px 0 rgba(255,255,255,0.42);
-box-shadow:inset 4px 4px 6px rgba(,0,0,0.28), 0 1px 0 rgba(255,255,255,0.42);
--moz-box-sizing:border-box;
--webkit-box-sizing:border-box;
-box-sizing:border-box;
-border-right: solid;
-border-bottom: solid;
-border-color: gray;
-border-width: 1px;
-        max-width: 800px;
-        margin: auto;
-    }
-        .fakeimg2 {
-        background: #000000;           background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#222));
-        border-radius: 14px;
-        background-color: #000000;
-        width: 100%;
-    height: 430px;
-webkit-box-shadow:inset 10px 20px 10px rgba(0,0,0,0.28), 10px 0 rgba(255,255,255,0.42);
-box-shadow:inset 10px 10px 10px rgba(0,0,0,0.28), 0 1px 0 rgba(255,255,255,0.42);
-box-shadow:inset 5px 5px 6px rgba(0,0,0,0.28), 0 1px 0 rgba(255,255,255,0.42);
--moz-box-sizing:border-box;
--webkit-box-sizing:border-box;
-box-sizing:border-box;
-border-right: solid;
-border-bottom: solid;
-border-color: gray;
-border-width: 1px;
-        max-width: 800px;
-        margin: auto;
-    }
-    
-        
-
-    
-
-    * {
-        box-sizing: border-box;
-    }
-   
- 
-/* just to remove default margins and paddings, kinda make everything looks better */
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
 }
-  
-/* the container just aligns the card at the center of the body */
 .container{
   perspective: 1000px;
   position: absolute;
-
+ 
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.card{
-  transform-style: preserve-3d;
-  width: 350px;
-  background: white;
-  box-shadow: 0 0 3px grey;
-  border-radius: 5px;
-  margin: auto;
-  cursor: pointr;
+.dark-mode {
+    background: #272727;
+    filter: invert(1) hue-rotate(210deg);
 }
-
-.inner-card{
-  padding: 15px;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  background: #91CC55;
-  transition: 1s;
+button{padding: 10px 10px;
+	margin: 0%;
 }
-.card:hover > .inner-card{
-  animation: clip 1.5s;
+.txt2 {
+    text-shadow: 1px 1px 2px #D3FFF8, 0 0 25px blue, 0 0 5px #E59CD9;
 }
-    
+.card {
+	border-radius: 10px;
+	border-style: solid;
+	border-color: #3F4351;
+background-color: #D7ECFF;
 
-@keyframes clip{
-  0%{
-    clip-path: circle(10% at 0px 0px);
-  }
-  100%{
-    clip-path: circle(100%);
-  }
 }
-
-
-    .mybutton {
+.txt1 {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+   .mybutton {
           
         background-color: #2196F3;
          
@@ -182,8 +76,8 @@ border-width: 1px;
       line-height: 19px;
       width: 80%;
       height: 4%;
-    
-     
+    text-align: center;
+     top: 0%;
      
     }
     
@@ -225,115 +119,50 @@ border-width: 1px;
         border-bottom-color: #CC6600;
         
     }
-    .footer {
-    
-height: 100%;
-  box-shadow: 0px -2px -2px #000;
-        padding: 20px;
-        padding-bottom: 1000px;
-        text-align: center;
-        background: #8886;
-    }
-@media screen and (max-width: 500px) {
-        .row {
-            flex-direction: column;
+    .a {
+            overflow: hidden;
+            background-color: #333;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
         }
-    }
-@media screen and (max-width: 400px) {
-        .navbar a {
-            float: none;
-            width: 100%;
-        }
-    }
-
-
-    body {
-        color: white;
-    }
-</style> 
- </head> 
- <body> 
-  <div class="navbr"> 
-   <p style="text-align:right"></p> 
-  </div> 
-  <div class="header"> 
-   <div class="container"> 
-    <div class="card" id="card" onmouseover="moving(event)" onmouseout="stopmoving()"> 
-     <div class="inner-card"> 
-      <h3>amir_ma</h3> 
-     </div> 
-    </div> 
-   </div> 
-   <script>
-var card = document.getElementById('card');
-  
-function moving(event){
-    let xaxis = (window.innerWidth / 0.5 - event.pageX) / 0.5;
-    let yaxis = (window.innerHeight / 100 - event.pageY) / 0.5;
-    card.style.transform = 'rotateY('+xaxis+'deg) rotateX('+yaxis+'deg)';
+</style>
+<script>
+	function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
 }
 
-function stopmoving(){
-    card.style.transform = "rotateY(0deg) rotateX(0deg)";
-    card.style.transition = "3.5s";
-}
-</script> 
-   <p style="font-family:arial; color:#FF0000;"></p> 
-  </div> 
-  <div class="footer" style="font-size:20px"> 
-   <br> 
-   <div class="fakeimg"> 
-    <br> 
-    <br> 
-    <p> hello,....</p> 
-    <br> 
-    <h3>servers</h3>
-    <div class="mybutton green"> <a herf="https://discord.gg/TcvA7tU8ue">-</a> 
-    </div> 
-    <br> 
-    <br> 
-    <div class="mybutton gray"> <a herf="https://discord.gg/vxVWBxZ3Rz">-</a> 
-    </div> 
-    <br> 
-    <br> 
-    <br> 
-    <br> 
-    <br> 
-    <br> 
-    <p>‌</p> 
-    <br> 
-    <br> 
-    <br> 
-    <p>‌</p> 
-    <br> 
-    <br> 
-    <br> 
-    <br> 
-   </div> 
-   <div class="fakeimg2" style="margin-top:28px"> 
-    <br> 
-    <h3>customize</h3> 
-    <wbr> 
-    <h4>background Color</h4> 
-    <input id="color" type="color" value="fff"> 
-    <br> 
-    <script>
-setInterval(() => {
-let color = document.getElementById('color');
-let colorValue = color.value;
-document.body.style.backgroundColor = colorValue;
-}, 100);
-</script> 
-    <br> 
-    <br> 
-    <br> 
-    <p>‌</p> 
-    <br> 
-    <br> 
-    <br> 
-    <p>‌</p> 
-   </div> 
-  </div> 
- </body>
+
+</script>
+
+</head>
+<body>
+<button onclick="myFunction()"><strong>Dark Mode</strong></button>
+</body>
+<div class="txt2">
+<center><h2>welcome</h2></center>
+</div>
+<br>
+<div class="card">
+<p class="txt1">hello, I am blue Mehran</p>
+<p class="txt1">
+I have a blue house with a blue window
+Blue is the color of all that I wear
+Blue are the streets and all the trees are, too
+I have a girlfriend and she is so blue
+Blue are the people here that walk around
+Blue like my Corvette, it's in and outside
+Blue are the words I say and what I think
+Blue are the feelings that live inside Me</p>
+</div>
+<br>
+<div class="card">
+<img src="62d8d26f1c61b417.jpg" alt="Image" title="Image" width="100%" height="100%" border-radius="15px">
+</div>
+<link href='https://fonts.googleapis.com/css?family=Noto+Serif:700,700italic' rel='stylesheet' type='text/css'>
+<canvas></canvas>
+<br>
+
 	</html>
 	
